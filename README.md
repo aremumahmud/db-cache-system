@@ -63,3 +63,27 @@ an example can be shown as we try to find through the `bakery collection` as we 
 ```
 
 ### cacheDS.update(`collection` , `parameters` , `callback`)
+
+This method allow to update data in the cache. example is shown
+
+```
+  cache.loadCollection('bakery' , data , ()=>{
+        cache.update('bakery' , {find :{_id: "9UQC7x3q8ha3h2R0pM01"} , updateWith : {cakecus : 'kondo'} } , (err,updated)=>{
+         
+        })
+
+    })
+```
+
+### cacheDS.delete(`collection` , `parameters` , `callback`)
+
+This method allow to delete data in the cache. example is shown
+
+```
+  cache.loadCollection('bakery' , data , ()=>{
+        cache.update('bakery' , {_id: "9UQC7x3q8ha3h2R0pM01"}, (err,deleted)=>{
+         
+        })
+
+    })
+```
